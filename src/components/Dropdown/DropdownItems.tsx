@@ -11,7 +11,7 @@ const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items }) => {
   const [activeID, setActiveID] = useState<string | null>(null);
 
   const handleClick = (id: string) => {
-    setActiveID(id === activeID ? null : id);
+    setActiveID(activeID === id ? null : id);
   };
 
   return (
@@ -25,12 +25,12 @@ const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items }) => {
           <KeyboardArrowDownIcon className="transition-transform duration-300" style={DropdownStyles.arrow(name, activeID)} />
       </button>
       <div
-        className="transition-all absolute w-full bg-gray1 rounded-lg"
+        className="transition-all absolute w-full bg-gray1 rounded-lg z-10"
         style={DropdownStyles.div(name, activeID)}
       >
-        <ul className="flex flex-col items-center gap-1 py-2 px-1">
+        <ul className="flex flex-col items-center gap-2 py-2 px-1">
           {items.map((item) => {
-            return <li className="cursor-pointer scale-95 hover:scale-100 transition-transform duration-300">{item}</li>
+            return <li key={item} className="cursor-pointer scale-95 hover:scale-100 transition-transform duration-300 text-center">{item}</li>
           })}
         </ul>
       </div>

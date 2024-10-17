@@ -1,4 +1,5 @@
 import Dropdown from '../components/Dropdown'
+import Featured from '../components/Featured'
 import Header from '../components/Header'
 
 
@@ -7,6 +8,7 @@ const Homepage = () => {
     <>
         <Header />
         <Dropdown />
+        <Featured />
     </>
   )
 }

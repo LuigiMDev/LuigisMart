@@ -22,7 +22,8 @@ export const DropdownStyles = {
     }
     return {
         transform: "rotate(-90deg)",
-        transition: "transform 0.3s ease"
+        transition: "transform 0.3s ease",
+        color: styles.colors.blue
     }
   },
   div(id: string, activeID: string | null): React.CSSProperties {
