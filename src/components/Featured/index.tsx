@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import crianca from "../../assets/FeaturedBanner/crianca.png";
+import fruits from "../../assets/FeaturedBanner/fruits.jpg"
 import fellTheTech from "../../assets/FeaturedBanner/feelthetech.png";
 import flashSale from "../../assets/FeaturedBanner/flashSale.png";
 import gloss from "../../assets/FeaturedBanner/gloss.png";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Featured = () => {
-  const banners = [crianca, fellTheTech, flashSale, gloss];
+  const banners = [fruits, fellTheTech, flashSale, gloss];
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -22,6 +22,20 @@ const Featured = () => {
         return setImageIndex(banners.length - 1)
     }
     return setImageIndex(imageIndex - 1)
+  }
+
+  const styleLi = (id: number) => {
+    if (id === imageIndex) {
+        return {
+            paddingBlock: 5,
+            paddingInline: 12,
+            borderRadius: 10
+        }
+    }
+    return {
+        padding: 5,
+        borderRadius: "50%"
+    }
   }
 
 useEffect(() => {
@@ -44,6 +58,12 @@ useEffect(() => {
         <div className="absolute bg-gray1 rounded-full right-0 translate-x-1/2 cursor-pointer hover:scale-105 transition-all" style={{padding: "2.5%"}} onClick={handleClickRight}>
             <KeyboardArrowDownIcon className="-rotate-90 h-full text-blue" />
         </div>
+        <ul className="absolute bottom-5 left-40 flex gap-2">
+            <li className="bg-white transition-all" style={styleLi(0)}></li>
+            <li className="bg-white transition-all" style={styleLi(1)}></li>
+            <li className="bg-white transition-all" style={styleLi(2)}></li>
+            <li className="bg-white transition-all" style={styleLi(3)}></li>
+        </ul>
       </div>
     </section>
   );
