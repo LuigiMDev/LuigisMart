@@ -1,6 +1,8 @@
 import Dropdown from '../components/Dropdown'
 import Featured from '../components/Featured'
 import Header from '../components/Header'
+import Shop from '../components/Shop'
+
 
 
 const Homepage = () => {
@@ -9,6 +11,7 @@ const Homepage = () => {
         <Header />
         <Dropdown />
         <Featured />
+        <Shop />
     </>
   )
 }

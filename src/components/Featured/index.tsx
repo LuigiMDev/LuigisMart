@@ -45,7 +45,7 @@ useEffect(() => {
   })
 
   return (
-    <section className="flex justify-center w-full select-none">
+    <section className="flex justify-center w-full select-none mb-20">
       <div className="relative flex items-center" style={{maxWidth: 1200, width: "100%", height: 400}}>
         <div className="w-full h-full flex overflow-hidden">
             {banners.map((url) => (
