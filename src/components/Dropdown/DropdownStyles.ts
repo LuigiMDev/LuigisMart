@@ -29,12 +29,12 @@ export const DropdownStyles = {
   div(id: string, activeID: string | null): React.CSSProperties {
     if (activeID === id) {
       return {
-        opacity: 100,
+        maxHeight: 500,
         pointerEvents: "auto",
       };
     }
     return {
-      opacity: 0,
+      maxHeight: 0,
       pointerEvents: "none",
     };
   },

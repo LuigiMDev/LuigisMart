@@ -25,7 +25,7 @@ const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items }) => {
           <KeyboardArrowDownIcon className="transition-transform duration-300" style={DropdownStyles.arrow(name, activeID)} />
       </button>
       <div
-        className="transition-all absolute w-full bg-gray1 rounded-lg z-10"
+        className="transition-all ease-in-out duration-300 absolute w-full bg-gray1 rounded-lg z-10 overflow-hidden"
         style={DropdownStyles.div(name, activeID)}
       >
         <ul className="flex flex-col items-center gap-2 py-2 px-1">
