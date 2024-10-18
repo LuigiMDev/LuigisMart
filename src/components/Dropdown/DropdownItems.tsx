@@ -17,7 +17,7 @@ const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items }) => {
   return (
     <li className="relative">
       <button
-        className="py-2 px-5 rounded-3xl text-white font-normal hover:opacity-90 transition-all"
+        className="py-2 px-3 rounded-3xl text-center text-white font-normal hover:opacity-90 transition-all"
         style={DropdownStyles.btn(name, activeID)}
         onClick={() => handleClick(name)}
       >

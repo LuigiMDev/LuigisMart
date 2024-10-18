@@ -46,8 +46,8 @@ useEffect(() => {
 
   return (
     <section className="flex justify-center w-full select-none mb-20">
-      <div className="relative flex items-center" style={{maxWidth: 1200, width: "100%", height: 400}}>
-        <div className="w-full h-full flex overflow-hidden">
+      <div className="relative flex items-center" style={{maxWidth: 1200, width: "100%", maxHeight: 400}}>
+        <div className="w-full h-full flex overflow-hidden rounded-xl">
             {banners.map((url) => (
                     <img key={url} className="object-cover rounded-xl w-full h-full transition-all duration-300" src={url} alt="banner"style={{translate: `${-100 * imageIndex}%`}} />
             ))}
@@ -58,7 +58,7 @@ useEffect(() => {
         <div className="absolute bg-gray1 rounded-full right-0 translate-x-1/2 cursor-pointer hover:scale-105 transition-all" style={{padding: "2.5%"}} onClick={handleClickRight}>
             <KeyboardArrowDownIcon className="-rotate-90 h-full text-blue" />
         </div>
-        <ul className="absolute bottom-5 left-40 flex gap-2">
+        <ul className="absolute bottom-[5%] left-[13.5%] flex gap-2 w-[10%]">
             <li className="bg-white transition-all" style={styleLi(0)}></li>
             <li className="bg-white transition-all" style={styleLi(1)}></li>
             <li className="bg-white transition-all" style={styleLi(2)}></li>
