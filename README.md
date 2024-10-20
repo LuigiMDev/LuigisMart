@@ -3,7 +3,9 @@
 
 Bem-vindo ao **Luigi'sMart**, um projeto de e-commerce moderno e responsivo, desenvolvido com **React**, **TailwindCSS** e **TypeScript**. Este é um marketplace online que oferece uma experiência de usuário fluida, intuitiva e otimizada para dispositivos móveis e desktops.
 
-![Luigi'sMart Preview](./path-to-your-screenshot.png)
+## GitHub Pages
+
+https://luigimdev.github.io/LuigisMart/
 
 ## 🚀 Tecnologias Utilizadas
 
