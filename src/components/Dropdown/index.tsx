@@ -8,7 +8,6 @@ const Dropdown = () => {
 
   const handleClick = (id: string) => {
     setActiveID(activeID === id ? null : id);
-    console.log(activeID)
   };
 
   return (
