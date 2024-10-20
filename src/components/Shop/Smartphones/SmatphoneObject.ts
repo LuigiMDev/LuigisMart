@@ -1,8 +1,8 @@
-import galaxyS22i from "../../assets/Smartphones/galaxyS22.jpg";
-import iphone13i from "../../assets/Smartphones/iphone13.jpg";
-import iphone16i from "../../assets/Smartphones/iphone16ProMax.webp";
-import m13i from "../../assets/Smartphones/m13.webp";
-import zFoldi from "../../assets/Smartphones/zFold.jpg";
+import galaxyS22i from "../../../assets/Smartphones/galaxyS22.jpg";
+import iphone13i from "../../../assets/Smartphones/iphone13.jpg";
+import iphone16i from "../../../assets/Smartphones/iphone16ProMax.webp";
+import m13i from "../../../assets/Smartphones/m13.webp";
+import zFoldi from "../../../assets/Smartphones/zFold.jpg";
 
 type Tsmartphone = {
   name: string;

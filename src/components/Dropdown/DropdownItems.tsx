@@ -1,18 +1,14 @@
-import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { DropdownStyles } from "./DropdownStyles";
 
 type DropdownItemsProps = {
   name: string;
   items: string[];
+  activeID: string | null;
+  handleClick: (id:string) => void;
 };
 
-const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items }) => {
-  const [activeID, setActiveID] = useState<string | null>(null);
-
-  const handleClick = (id: string) => {
-    setActiveID(activeID === id ? null : id);
-  };
+const DropdownItems: React.FC<DropdownItemsProps> = ({ name, items , activeID, handleClick}) => {
 
   return (
     <li className="relative">
