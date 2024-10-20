@@ -52,6 +52,7 @@ Bem-vindo ao **Luigi'sMart**, um projeto de e-commerce moderno e responsivo, des
 # 🖼️ Preview
 
 Aqui está uma prévia da interface:
+
 ![Luigi'sMart](./src/assets/Readme/luigismart.png)
 
 # 📄 Licença
